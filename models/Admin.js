@@ -3,12 +3,12 @@ const { Schema } = mongoose;
 
 const AdminSchema = new Schema(
   {
-    adminname: {
-      type: String,
-      trim: true,
-      max: 20,
-      min: 3,
-    },
+    // adminname: {
+    //   type: String,
+    //   trim: true,
+    //   max: 20,
+    //   min: 3,
+    // },
     email: {
       type: String,
       trim: true,
