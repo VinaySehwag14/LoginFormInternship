@@ -36,7 +36,7 @@ router.post("/login", async (req, res) => {
     !validated && res.status(400).json("Incorrect Password");
 
     const accessToken = jwt.sign(
-      { id: admin._id, adminname: admin.adminname },
+      { id: admin._id, email: admin.email },
       process.env.SECRET_KEY,
       {
         expiresIn: "5 minutes", //* expires in 5 minutes
